@@ -1,38 +1,13 @@
 <script setup lang="ts">
 import {ref} from 'vue'
-
-const characters = [
-  "A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R",
-  "S","T","U","V","W","X","Y","Z","a","b","c","d","e","f","g","h","i","j",
-  "k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z", "0", "1",
-  "2", "3", "4", "5", "6", "7", "8", "9","~","`","!","@","#","$","%","^","&",
-  "*","(",")","_","-","+","=","{","[","}","]",",","|",":",";","<",">",".","?","/"
-];
+import { generatePassword } from './utils'
 
 const shortPasswordEl = ref('')
 const longPasswordEl = ref('')
 
-let passwordLength = {
-  short: 12,
-  long: 15,
-};
-
-function getRandomCharacter() {
-  const index = Math.floor(Math.random() * characters.length);
-  return characters[index];
-}
-
-function generatePassword() {
-  let shortPassword = "";
-  for (let i = 0; i < passwordLength.short; i++) {
-    shortPassword += getRandomCharacter();
-  }
+function handleGeneratePassword() {
+  const {shortPassword, longPassword} = generatePassword()
   shortPasswordEl.value = shortPassword;
-
-  let longPassword = "";
-  for (let i = 0; i < passwordLength.long; i++) {
-    longPassword += getRandomCharacter();
-  }
   longPasswordEl.value = longPassword;
 }
 </script>
@@ -42,7 +17,7 @@ function generatePassword() {
     <h1 class="title">Generate a <br/><span class="highlight">random password</span></h1>
     <h2 class="subtitle">Never use an insecure password again.</h2>
 
-    <button class="btn" @click="generatePassword">Generate passwords</button>
+    <button class="btn" @click="handleGeneratePassword">Generate passwords</button>
 
     <div class="divider"></div>
 
