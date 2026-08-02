@@ -1,0 +1,51 @@
+@import 'reset.css';
+
+:root {
+    --color-bg: #181427;
+    --color-card: #2C2C3C;
+
+    --color-text: #EAEFFD;
+    --color-text-muted: #9a9a9a;
+
+    --color-border: #2C2C3C;
+    --color-border-light: #3a3a4e;
+
+    --color-primary: #967BD7;
+    --color-primary-hover: #a287e4;
+
+    --color-light: #FFFFFF;
+    --color-highlight: #6DC861;
+
+    --color-weak: #FF0202;
+    --color-fair: #EF86E7;
+    --color-good: #967BD7;
+    --color-strong: #6DC861;
+    --color-very-strong: #4630ef;
+
+    --space-4: 4px;
+    --space-8: 8px;
+    --space-12: 12px;
+    --space-16: 16px;
+    --space-20: 20px;
+    --space-24: 24px;
+    --space-32: 32px;
+    --space-48: 48px;
+
+    --shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: var(--color-bg);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: var(--color-text);
+}
+
+#app {
+    width: 100%;
+    max-width: 560px;
+    padding: var(--space-16);
+}

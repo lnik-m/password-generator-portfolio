@@ -18,19 +18,20 @@ const emit = defineEmits<Emits>()
     justify-content: center;
     align-items: center;
     gap: 8px;
-    padding: 14px 16px;
-    border-radius: 10px;
+    padding: 12px 24px;
+    border-radius: var(--space-12);
     font-weight: 600;
-    font-size: 20px;
-    background: var(--bg-gradient);
+    font-size: 16px;
+    background: var(--color-primary);
     cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
   }
 
   .button:hover {
-    background: var(--bg-gradient-hover);
+    background: var(--color-primary-hover);
   }
 
   .button:active {
-    transform: translateY(1px);
+    transform: translateY(1px) scale(0.98);
   }
 </style>
