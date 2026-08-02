@@ -5,22 +5,24 @@
     --color-card: #2C2C3C;
 
     --color-text: #EAEFFD;
-    --color-text-muted: #9a9a9a;
+    --color-text-muted: #DBDBDB;
 
     --color-border: #2C2C3C;
     --color-border-light: #3a3a4e;
 
-    --color-primary: #967BD7;
-    --color-primary-hover: #a287e4;
+    --color-primary: #E0D8F3;
+    --color-primary-hover: #D7CCF3;
+    --color-primary-button: #462A86;
+    --color-primary-button-hover: #52329C;
 
     --color-light: #FFFFFF;
     --color-highlight: #6DC861;
 
-    --color-weak: #FF0202;
-    --color-fair: #EF86E7;
-    --color-good: #967BD7;
-    --color-strong: #6DC861;
-    --color-very-strong: #4630ef;
+    --color-weak: #ff6161;
+    --color-fair: #FF9EF7;
+    --color-good: #C5B2FF;
+    --color-strong: #83EF75;
+    --color-very-strong: #92C8FF;
 
     --space-4: 4px;
     --space-8: 8px;

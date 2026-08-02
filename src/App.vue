@@ -87,8 +87,8 @@ const { options, password, copied, strength, generatePassword, copyToClipboard }
 }
 
 .password-display:hover {
-  border-color: var(--color-primary);
-  background: var(--color-primary);
+  border-color: var(--color-primary-button);
+  background: var(--color-primary-button);
   color: var(--color-light);
 }
 
@@ -97,7 +97,7 @@ const { options, password, copied, strength, generatePassword, copyToClipboard }
 }
 
 .password-text {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   font-family: monospace;
   word-break: break-all;

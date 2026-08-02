@@ -151,7 +151,7 @@ function updateOption<K extends keyof PasswordOptions>(
 .checkbox-label input[type="checkbox"] {
   width: 16px;
   height: 16px;
-  accent-color: var(--color-primary);
+  accent-color: var(--color-primary-button);
   cursor: pointer;
 }
 

@@ -22,13 +22,13 @@ const emit = defineEmits<Emits>()
     border-radius: var(--space-12);
     font-weight: 600;
     font-size: 16px;
-    background: var(--color-primary);
+    background: var(--color-primary-button);
     cursor: pointer;
     transition: background 0.2s, transform 0.1s;
   }
 
   .button:hover {
-    background: var(--color-primary-hover);
+    background: var(--color-primary-button-hover);
   }
 
   .button:active {
