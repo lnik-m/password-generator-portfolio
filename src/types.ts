@@ -1,4 +1,3 @@
-// src/types/password.ts
 export interface PasswordOptions {
   length: number
   useUppercase: boolean

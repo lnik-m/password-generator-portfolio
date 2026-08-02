@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import type { PasswordOptions as PasswordOptionsType } from './types'
+
 import { usePasswordGenerator } from './composables/use-password-generator'
 import Button from './components/Button.vue'
 import PasswordOptions from './components/PasswordOptions.vue'
@@ -31,7 +33,7 @@ const { options, password, copied, strength, generatePassword, copyToClipboard }
     <PasswordStrength :strength="strength" />
     <PasswordOptions
         :options="options"
-        @update:options="(value: PasswordOptions) => (options = value)"
+        @update:options="(value: PasswordOptionsType) => (options = value)"
     />
 
     <Button class="btn" @click="generatePassword">Generate new password</Button>
